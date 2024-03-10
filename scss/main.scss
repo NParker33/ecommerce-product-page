@@ -1,3 +1,19 @@
 @import "config";
 @import "header";
+@import "nav";
 @import "footer";
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $cc-shadow;
+    visibility: hidden;
+
+    &.open {
+        visibility: visible;
+    }
+}

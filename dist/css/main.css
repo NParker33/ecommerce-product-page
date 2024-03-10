@@ -3,6 +3,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -56,10 +66,6 @@ body {
   width: 100%;
 }
 
-.nav {
-  display: none;
-}
-
 .btn {
   cursor: pointer;
 }
@@ -77,6 +83,37 @@ body {
   margin-right: 0.5rem;
 }
 
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100vh;
+  background: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
+
+.nav.open {
+  visibility: visible;
+}
+
+.nav__menu {
+  margin-top: 2.3rem;
+}
+
+.nav__item {
+  margin: 1.1rem 0;
+}
+
+.nav__link {
+  font-weight: 700;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
 .attribution {
   position: absolute;
   bottom: 0;
@@ -88,5 +125,19 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  visibility: hidden;
+}
+
+.overlay.open {
+  visibility: visible;
 }
 /*# sourceMappingURL=main.css.map */

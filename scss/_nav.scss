@@ -1,0 +1,52 @@
+// <nav class="nav">
+//     <div class="btn btn--close icon">
+//     <img src="images/icon-close.svg" alt="Close menu">
+//     </div>
+//     <ul class="nav__menu">
+//     <li class="nav__item">
+//         <a href="#" class="nav__link">Collections</a>
+//     </li>
+//     <li class="nav__item">
+//         <a href="#" class="nav__link">Men</a>
+//     </li>
+//     <li class="nav__item">
+//         <a href="#" class="nav__link">Women</a>
+//     </li>
+//     <li class="nav__item">
+//         <a href="#" class="nav__link">About</a>
+//     </li>
+//     <li class="nav__item">
+//         <a href="#" class="nav__link">Contact</a>
+//     </li>
+//     </ul>
+// </nav>
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    background: $cc-white;
+    padding: 1.5rem;
+    @include flexCol;
+    visibility: hidden;
+
+    &.open {
+        visibility: visible;
+    }
+
+    &__menu {
+        margin-top: 2.3rem;
+    }
+
+    &__item {
+        margin: 1.1rem 0;
+    }
+
+    &__link {
+        font-weight: $fw-bold;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+}

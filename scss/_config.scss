@@ -6,17 +6,37 @@ $very-dk-blue: hsl(220, 13%, 13%);
 $cc-dark-gray-blue: hsl(219, 9%, 45%);
 $lt-gray-blue: hsl(223, 64%, 98%);
 $cc-white: hsl(0, 0%, 100%);
-$cc-shadow: hsla(0, 0% ,0%, 75%);
+$cc-shadow: rgba(0, 0 ,0, 0.75);
 
 $ff-main: "Kumbh Sans", sans-serif;
 
 $fw-reg: 400;
 $fw-bold: 700;
 
+@mixin iconSize {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+@mixin flexCol {
+    display: flex;
+    flex-direction: column;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $ff-main;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 body {
@@ -28,8 +48,7 @@ body {
 }
 
 .flex-col {
-    display: flex;
-    flex-direction: column;
+    @include flexCol;
 }
 
 .flex-center {
@@ -39,11 +58,6 @@ body {
 }
 
 .icon {
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
-@mixin iconSize {
     height: 1.5rem;
     width: 1.5rem;
 }
