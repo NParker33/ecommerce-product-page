@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    height: max-content;
+    padding: 1rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+
+    &__brand {
+        width: 50%;
+        margin-right: 3rem;
+
+        &-img {
+            width: 100%;
+        }
+    }
+
+    &__cart {
+        display: none;
+        position: absolute;
+    }
+
+    &__profile {
+
+        &-img {
+            width: 100%;
+        }
+    }
+}
+
+.nav {
+    display: none;
+}
+
+.btn {
+    cursor: pointer;
+
+    &--menu {
+        margin-right: 1rem;
+
+        .icon {
+            width: 100%;
+        }
+    }
+
+    &--cart {
+        position: relative; // for the cart container
+        margin-right: 0.5rem;
+    }
+}

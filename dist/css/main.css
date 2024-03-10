@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  height: max-content;
+  padding: 1rem;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.header__brand {
+  width: 50%;
+  margin-right: 3rem;
+}
+
+.header__brand-img {
+  width: 100%;
+}
+
+.header__cart {
+  display: none;
+  position: absolute;
+}
+
+.header__profile-img {
+  width: 100%;
+}
+
+.nav {
+  display: none;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn--menu {
+  margin-right: 1rem;
+}
+
+.btn--menu .icon {
+  width: 100%;
+}
+
+.btn--cart {
+  position: relative;
+  margin-right: 0.5rem;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%);
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */

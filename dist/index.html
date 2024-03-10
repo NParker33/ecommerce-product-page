@@ -5,24 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | E-commerce product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="flex-col">
+  <header class="header flex">
+    <div class="btn btn--menu">
+      <img class="icon" src="images/icon-menu.svg" alt="">
+    </div>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+    <div class="header__brand">
+      <img class="header__brand-img" src="images/logo.svg" alt="Sneakers logo">
+    </div>
 
-  Sneaker Company
+    <nav class="nav">
+      <div class="btn btn--close icon">
+        <img src="images/icon-close.svg" alt="Close menu">
+      </div>
+      <ul class="nav__menu">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Collections</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Men</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Women</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="btn btn--cart flex-center icon">
+      <img src="images/icon-cart.svg" alt="">
+      <div class="header__cart">
+        <p>Cart</p>
+      </div>
+    </div>
+
+    <div class="header__profile icon">
+      <img src="images/image-avatar.png" alt="Profile picture" class="header__profile-img">
+    </div>
+
+    <hr>
+  </header>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Nicole Parker</a>.
+  </footer>
+
+  <!-- Sneaker Company
 
   Fall Limited Edition Sneakers
 
@@ -34,11 +72,6 @@
   $250.00
 
   0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  Add to cart -->
 </body>
 </html>
